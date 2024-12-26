@@ -1,0 +1,17 @@
+export const CSV_HEADER = [
+  "designatedNumber",
+  "serviceMajorType",
+  "serviceMiddleType",
+  "officeName",
+  "prefCode",
+  "cityCode",
+  "postCode",
+  "officeAddress",
+  "officeTelNumber",
+  "officeFaxNumber",
+  "designatedDate",
+  "ManagementCorporationNumber",
+  "operationStatus",
+  "remark",
+  "url",
+] as const;

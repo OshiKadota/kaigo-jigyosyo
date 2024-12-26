@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --default-padding: 16px;
+  --header-height: 64px;
+  --view-search-wrapper: 88px;
+  --view-list-map-switch-wrapper: 62px;
+}
+
+.custom-map-height {
+  height: calc(
+    100svh - 112px - var(--header-height) - 32px
+  ); /* 112pxは表示施設切替バー */
+}
+.body-height {
+  height: calc(100svh - var(--header-height)); /* 112pxは表示施設切替バー */
+}
+
+.view-list-height {
+  height: calc(
+    100svh - var(--header-height) - var(--default-padding) -
+      var(--view-list-map-switch-wrapper) - var(--view-search-wrapper) -
+      var(--default-padding)
+  ); /* 112pxは表示施設切替バー */
+}
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} */
